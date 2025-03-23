@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Add WordPress function to dynamically generate the title -->
+    <title>Cool Web Template</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Add WordPress function to display the site logo (wp_get_attachment_image) -->
+            My Website
+        </div>
+        <ul>
+            <!-- Add WordPress function to dynamically generate menu items (wp_nav_menu) -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <!-- Add WordPress function to dynamically generate the hero title (the_title) -->
+            <h1>Welcome to Our Website</h1>
+            <!-- Add WordPress function to dynamically generate the hero description (the_content) -->
+            <p>Your success starts here. Join us today!</p>
+            <!-- Add WordPress function to dynamically generate the call-to-action button (wp_nav_menu) -->
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="services">
+            <!-- Add WordPress function to dynamically generate the services title (the_title) -->
+            <h2>Our Services</h2>
+            <!-- Add WordPress function to dynamically generate services (WP_Query) -->
+            <div class="service-item">
+                <h3>Service 1</h3>
+                <p>Description of service 1. This can be dynamically generated from WordPress custom post types.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 2</h3>
+                <p>Description of service 2. This can be dynamically generated from WordPress custom post types.</p>
+            </div>
+            <div class="service-item">
+                <h3>Service 3</h3>
+                <p>Description of service 3. This can be dynamically generated from WordPress custom post types.</p>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <!-- Add WordPress function to dynamically generate the testimonials title (the_title) -->
+            <h2>Testimonials</h2>
+            <!-- Add WordPress function to dynamically generate testimonials (WP_Query) -->
+            <div class="testimonial-item">
+                <p>"This is a great service!" - Customer 1</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I highly recommend them!" - Customer 2</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Add WordPress function to dynamically generate the footer text (wp_footer) -->
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <!-- Add WordPress function to display footer widgets (dynamic_sidebar) -->
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
